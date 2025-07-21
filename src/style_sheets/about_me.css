@@ -1,0 +1,76 @@
+.aboutMe-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start; /* align content to the left */
+  gap: 20rem;
+  padding: 3vh 2vw;
+  max-width: 100%;
+  /* margin-left: 2vw; */
+  /* border: 2px solid red; */
+}
+
+.aboutMeImg-container {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  border-radius: 12px;
+  border: 2.5px solid black;
+
+}
+
+.aboutMeImg-container img {
+  width: 25vw;
+  height: auto;
+  border-radius: 12px;
+  /* border: 2.5px solid black; */
+}
+
+.aboutMeTxt-container {
+  flex: 1 1 250px;
+  display: flex;
+  max-height: fit-content;
+  max-width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2.5px solid black; */
+}
+
+.aboutMeTxt-container h2,
+.aboutMeTxt-container h3 {
+  font-size: 1.6rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+/* Specific Instructions for when the screen is resized to a certain size. Mostly for mobile based layouts. */
+
+@media (max-width: 768px) {
+  .aboutMe-container {
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .aboutMeImg-container {
+    justify-content: center;
+  }
+
+  .aboutMeTxt-container{
+    justify-content: center;
+    max-width: 90vw;
+  }
+
+  .aboutMeTxt-container h2,
+  .aboutMeTxt-container h3 {
+    text-align: center;
+  }
+
+  .aboutMeImg-container img {
+    width: 80%;
+  }
+}
