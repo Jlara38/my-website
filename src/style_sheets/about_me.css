@@ -1,13 +1,26 @@
+.aboutMe-header-wrapper{
+  padding: 2rem;
+  text-align: center;
+}
+
+.aboutMe-header{
+  display: inline-block;
+  text-align: center;
+  border-bottom: 2px dashed black;
+  margin: 0 auto;
+}
+
 .aboutMe-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start; /* align content to the left */
-  gap: 20rem;
+  gap: 10rem;
   padding: 3vh 2vw;
   max-width: 100%;
   /* margin-left: 2vw; */
-  /* border: 2px solid red; */
+  border: 2px solid red;
+  border-bottom: 1px solid black;
 }
 
 .aboutMeImg-container {
@@ -16,29 +29,57 @@
   width: auto;
   border-radius: 12px;
   border: 2.5px solid black;
-
 }
 
 .aboutMeImg-container img {
-  width: 25vw;
+  width: 80%;
   height: auto;
   border-radius: 12px;
-  /* border: 2.5px solid black; */
+  border: 2.5px solid black;
 }
 
 .aboutMeTxt-container {
   flex: 1 1 250px;
   display: flex;
   max-height: fit-content;
-  max-width: 50vw;
+  max-width: 30vw;
   flex-direction: column;
   justify-content: center;
-  /* border: 2.5px solid black; */
+  border: 2.5px solid black;
 }
 
-.aboutMeTxt-container h2,
-.aboutMeTxt-container h3 {
-  font-size: 1.6rem;
+.aboutMeTxt-container h2{
+  font-size: 2rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.aboutMeTxt-container p{
+  font-size: 1.55rem;
+}
+
+.aboutMeTxt-container img{
+  width: 10%;
+  height: auto;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.aboutMeTxt-hobbies-container {
+  flex: 1 1 250px;
+  display: flex;
+  max-height: fit-content;
+  max-width: 30vw;
+  flex-direction: column;
+  justify-content: center;
+  border: 2.5px solid black;
+}
+
+.aboutMeTxt-hobbies-container h2{
+  font-size: 2rem;
   margin: 0.3rem 0;
   text-decoration: none;
   line-height: 1.5;
@@ -51,9 +92,11 @@
 
 @media (max-width: 768px) {
   .aboutMe-container {
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+    gap: 2rem;
   }
 
   .aboutMeImg-container {
@@ -65,10 +108,22 @@
     max-width: 90vw;
   }
 
+  .aboutMeTxt-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+
+  .aboutMeTxt-hobbies-container{
+    justify-content: center;
+    max-width: 90vw;
+  }
+
   .aboutMeTxt-container h2,
-  .aboutMeTxt-container h3 {
+  .aboutMeTxt-container p{
     text-align: center;
   }
+  
 
   .aboutMeImg-container img {
     width: 80%;

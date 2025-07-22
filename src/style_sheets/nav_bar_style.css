@@ -12,6 +12,7 @@
 
 .site-title {
     font-size: 2rem;
+    margin-left: 1rem;
 }
 
 .site-nav ul{
@@ -19,7 +20,7 @@
     margin: 1rem;
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 8rem;
 }
 
 .site-nav a {
