@@ -39,8 +39,11 @@ export default function AboutMe() {
       </div>
 
       <div className="aboutMeTxt-hobbies-container">
-        <h2> Hello,</h2>
-        <h3> Kom </h3>
+        <h2> My hobbies & interests</h2>
+        <li>Listening to various genres of music.</li>
+        <li>Playing video games.</li>
+        <li>Learning about new ways to apply Computer Science to everyday life.</li>
+        <li>Watching videos that are related to applications of programming in video games.</li>
       </div>
 
     </div>

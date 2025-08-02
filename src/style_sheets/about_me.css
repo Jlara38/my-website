@@ -6,7 +6,7 @@
 .aboutMe-header{
   display: inline-block;
   text-align: center;
-  border-bottom: 2px dashed black;
+  /* border-bottom: 2px dashed black; */
   margin: 0 auto;
 }
 
@@ -15,11 +15,11 @@
   flex-wrap: wrap;
   /* align-items: center; */
   justify-content: flex-start; /* align content to the left */
-  gap: 10rem;
+  gap: 8rem;
   padding: 3vh 2vw;
   max-width: 100%;
   /* margin-left: 2vw; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   border-bottom: 1px solid black;
 }
 
@@ -28,7 +28,7 @@
   justify-content: flex-start;
   width: auto;
   border-radius: 12px;
-  border: 2.5px solid black;
+  /* border: 2.5px solid black; */
 }
 
 .aboutMeImg-container img {
@@ -45,7 +45,7 @@
   max-width: 30vw;
   flex-direction: column;
   justify-content: center;
-  border: 2.5px solid black;
+  /* border: 2.5px solid black; */
 }
 
 .aboutMeTxt-container h2{
@@ -58,7 +58,7 @@
 }
 
 .aboutMeTxt-container p{
-  font-size: 1.55rem;
+  font-size: 1.45rem;
 }
 
 .aboutMeTxt-container img{
@@ -75,13 +75,28 @@
   max-width: 30vw;
   flex-direction: column;
   justify-content: center;
-  border: 2.5px solid black;
+  /* border: 2.5px solid black; */
 }
 
 .aboutMeTxt-hobbies-container h2{
   font-size: 2rem;
   margin: 0.3rem 0;
   text-decoration: none;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.aboutMeTxt-hobbies-container {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0
+}
+
+.aboutMeTxt-hobbies-container li{
+  list-style-position: inside;
+  font-size: 1.45rem;
+  margin: 0.3rem 0;
   line-height: 1.5;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -128,4 +143,13 @@
   .aboutMeImg-container img {
     width: 80%;
   }
+
+  .aboutMeTxt-hobbies-container {
+    justify-content: center;
+    max-width: 90vw;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0
+  }
+
 }
