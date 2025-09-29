@@ -1,9 +1,9 @@
-import Education from "./Education.jsx";
+import Education from "./Education";
 
 export default function App() {
     return (
         <>
-            {/* <Education></Education> */}
+            <Education></Education>
         </>
     );
 }
