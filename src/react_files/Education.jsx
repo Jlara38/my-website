@@ -1,43 +1,21 @@
 // import uic from "../assets/uic.png";
 import SectionHeader from "../components/SectionHeader";
+import CourseWorkCarousel from "../components/CourseworkCarousel";
+import {courses} from "../data/coursesData.json";
 
-const courses = [
-  { 
-    title: "Data Structures & Algorithms",
-    description: "Ane"
-  },
-
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-  {
-    title: "Database Systems",
-    description: dataset
-  },
-]
 
 export default function Education() {
+  // const courses = [
+  //   { title: "Data Structures & Algorithms", description: "Ane"},
+  //   { title: "Database Systems", description: "Ane"},
+  //   { title: "Database Systems", description: "dataset"},
+  //   { title: "Database Systems", description: "dataset"},
+  //   { title: "Database Systems", description: "dataset"},
+  //   { title: "Database Systems", description: "dataset"},
+  //   { title: "Database Systems", description: "dataset"},
+  //   { title: "Database Systems", description: "dataset"},
+  // ]
+
   return (
     <>
       <SectionHeader title="Education" />
@@ -52,9 +30,8 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="RelClasses">
-          <h1> HELLO</h1>
-        </div>
+        <CourseWorkCarousel data={courses}></CourseWorkCarousel>
+
       </div>
     </>
   );
