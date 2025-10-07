@@ -5,17 +5,6 @@ import {courses} from "../data/coursesData.json";
 
 
 export default function Education() {
-  // const courses = [
-  //   { title: "Data Structures & Algorithms", description: "Ane"},
-  //   { title: "Database Systems", description: "Ane"},
-  //   { title: "Database Systems", description: "dataset"},
-  //   { title: "Database Systems", description: "dataset"},
-  //   { title: "Database Systems", description: "dataset"},
-  //   { title: "Database Systems", description: "dataset"},
-  //   { title: "Database Systems", description: "dataset"},
-  //   { title: "Database Systems", description: "dataset"},
-  // ]
-
   return (
     <>
       <SectionHeader title="Education" />

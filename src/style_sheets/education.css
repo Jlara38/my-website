@@ -10,7 +10,8 @@
     width: 45vw;
     height: auto;
     border-radius: 12px;
-    /* border: 2.5px solid black;  */
+    border: 2.5px solid black; 
+    margin-right: 48px;
     padding: 10px;
 }
 
