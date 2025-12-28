@@ -1,0 +1,32 @@
+/* The aboutme container will have changes that I want reflected for that specific section. */
+.aboutme-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.general-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.name-title{
+}
+
+.professional-headshot{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

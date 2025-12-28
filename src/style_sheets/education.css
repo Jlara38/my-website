@@ -1,24 +1,22 @@
-.EduDiv{
+/* education-section is solely focused on how the entire education section will look. From how its 
+aligned to how it works on screens and how much space the entire section will take. */
+
+.education-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.education-grid{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
-    justify-content: flex-start;
-    border-bottom: 1px solid black;
+    justify-content: space-around;
+    border: 1px solid black;
 }
 
-.SchBannHead{
-    width: 45vw;
-    height: auto;
-    border-radius: 12px;
-    border: 2.5px solid black; 
-    margin-right: 48px;
-    padding: 10px;
+/* The education-item will be more specific in order to manipulate how the item is presented on the screen. */
+.education-item{
+    border: 1px solid black;
 }
-
-.SchBannHead img{
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    border: 2.5px solid black; 
-}
-

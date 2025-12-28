@@ -1,11 +1,11 @@
-import Education from "./Education";
-import Work from "./Work";
+import Education from "./Education.jsx";
+import AboutMe from "./AboutMe.jsx";
 
 export default function App() {
     return (
         <>
-            <Education></Education>
-            <Work></Work>
+            <AboutMe></AboutMe>
+            {/* <Education></Education> */}
         </>
     );
 }
