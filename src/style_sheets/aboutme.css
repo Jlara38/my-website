@@ -1,32 +1,77 @@
 /* The aboutme container will have changes that I want reflected for that specific section. */
 .aboutme-container{
+    width: 100%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+
+    box-sizing: border-box;
+    border: 2px solid red;
 }
 
 .general-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: stretch;
+    gap: 2rem;
+    /* border: 2px solid black; */
 }
 
-.name-title{
+.name-titles,
+.professional-headshot {
+    flex: 1;
+    max-width: 50%;
 }
+
+.name-titles{
+    flex: 1 1 50%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.1rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -0.22rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icons img{
+    width: 2vw;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icons img:hover{
+    transform: scale(1.1);
+}
+
 
 .professional-headshot{
-    width: 20vw;
-    height: 30vh;
+    flex: 0 0 50%;
+    height: 100%;
+    width: auto;
+    max-width: 250px;
+    /* height: 30vh; */
+    /* aspect-ratio: 1/1; */
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
+    /* flex-shrink: 0; */
 }
 
 #picture{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    /* display: block; */
 }
