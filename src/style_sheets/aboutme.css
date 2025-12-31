@@ -1,77 +1,87 @@
-/* The aboutme container will have changes that I want reflected for that specific section. */
-.aboutme-container{
+/*The div will set the stage for the rest of the children in this specific section.
+Specifies the amount of space it will take, padding, and the format that it will adopt to show the information on screen.*/
+.general-info{
     width: 100%;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     box-sizing: border-box;
-    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* border: 2px solid red; */
 }
 
-.general-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    /* border: 2px solid black; */
-}
 
-.name-titles,
-.professional-headshot {
-    flex: 1;
-    max-width: 50%;
-}
+/* Used for general debugging of spacing. */
 
+/* 
+.general-info > * {
+    outline: 2px dashed blue;
+} */
+
+
+/*Will allow the name and titles div to be able to resize as needed to accomodate the new text being added.*/
 .name-titles{
-    flex: 1 1 50%;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 0.1rem;
+    gap: 0.5rem;
+    /* border: 2px solid black; */
+
 }
 
+/* Will allow for the icons inside of the icons div to resize as needed while additionally specifying spacing between elements and its neighbors */
 .icons{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: -0.22rem;
     gap: 1rem;
     margin-top: 1rem;
+    /* border: 2px solid red; */
+
 }
 
+/*Directly will influence the size of the icons as the screen size changes and indicated the behavior they will have when pointed and what kind
+of transition they will have.*/
 .icons img{
-    width: 2vw;
-    height: auto;
-    object-fit: contain;
+    width: clamp(28px, 3.5vw, 38px);
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
+/*This is done in order to add an effect to the icons once they are being hovered over and what kind of action they should take.*/
 .icons img:hover{
     transform: scale(1.1);
 }
 
-
-.professional-headshot{
-    flex: 0 0 50%;
-    height: 100%;
-    width: auto;
-    max-width: 250px;
-    /* height: 30vh; */
-    /* aspect-ratio: 1/1; */
+/*This specifies the size and behavior that the professional headshot will take. If the webpage or page becomes
+smaller or bigger the clamp will take care of adjusting the size according to the sizes specified. 
+While also keeping a circular border that will contain the image while hidding any excess from the image. */
+.professional-headshot {
+    justify-self: center;
+    width: clamp(200px, 25vw, 350px);
+    aspect-ratio: 1/1;
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
-    /* flex-shrink: 0; */
 }
 
-#picture{
+/*The image will be in full size but will size itself to fit inside of the border specified in professional-headshot*/
+.professional-headshot img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* display: block; */
+}
+
+/*This section is strictly dedicated to specifying the behavior that the webpage will have on mobile screens/smaller screens.
+It will attempt to place it in a vertical area so as to fit in the smaller screen without causing disruption.*/
+@media (max-width: 768px) {
+    .general-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .professional-headshot {
+        margin: 0 auto;
+    }
+
+    .icons {
+        justify-content: center;
+    }
 }
