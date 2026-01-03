@@ -7,6 +7,7 @@ import './style_sheets/style.css'
 import './style_sheets/sections.css'
 import './style_sheets/aboutme.css'
 import './style_sheets/education.css'
+import './style_sheets/card.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
