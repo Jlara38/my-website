@@ -4,10 +4,14 @@ import App from './react_files/App.jsx'
 
 // All style sheet imports will belong here.
 import './style_sheets/style.css'
-import './style_sheets/sections.css'
 import './style_sheets/aboutme.css'
 import './style_sheets/education.css'
+import './style_sheets/experience.css'
+
+// All component style sheet imports will be here
 import './style_sheets/card.css'
+import './style_sheets/sections.css'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
