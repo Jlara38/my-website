@@ -10,3 +10,21 @@ export default function Card() {
         </div>
     )
 }
+
+// .experience-card-container{
+//     width: 100%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     box-sizing: border-box;
+//     gap: 2rem;
+//     justify-content: center;
+//     padding: 2rem;
+//     border: 2px solid red;
+// }
+
+            
+            // <div className='experience-card-container'>
+            //     <Card></Card>
+            //     <Card></Card>
+            //     <Card></Card>
+            // </div>

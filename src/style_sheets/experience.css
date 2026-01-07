@@ -8,13 +8,30 @@
     /* border: 2px solid red; */
 }
 
-.experience-card-container{
+.experience-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    gap: 2rem;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 2rem;
     border: 2px solid red;
+}
+
+.company-subinfo{
+    width: 100%;
+    justify-self: center;
+    border: 2px solid red;
+}
+
+.company-subinfo h2,h3{
+    text-align: center;
+}
+
+.description-duties{
+    width: 80%;
+    justify-self: center;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 2rem;
 }
