@@ -5,3 +5,13 @@
     display: grid;
     align-items: center;
 }
+
+.projects-container{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}

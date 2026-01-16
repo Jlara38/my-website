@@ -1,18 +1,20 @@
-export default function Card({ name, description, skills, image, alt}) {
+export default function Card({ name, description, skills, image, alt, link}) {
     return(
-        <div className="card">
-            <img src={image} alt={alt}></img>
-            <h2>{name}</h2>
-            <p>{description}</p>
+        <a href={link} target="_blank">
+            <div className="card">
+                <img src={image} alt={alt}></img>
+                <h2>{name}</h2>
+                <p>{description}</p>
 
-            <ul className="skill-list">
-                {skills.map(skill => (
-                    <li key={skill}>{skill}</li>
-                ))}
-            </ul>
-            {/* Perhaps make it clickable to add a description of what it was that your duties are/were. */}
-            {/* <p>Working on this component</p> */}
-        </div>
+                <div className="skill-list">
+                    {skills.map(skill => (
+                        <button key={skill}>{skill}</button>
+                    ))}
+                </div>
+                {/* Perhaps make it clickable to add a description of what it was that your duties are/were. */}
+                {/* <p>Working on this component</p> */}
+            </div>
+        </a>
     )
 }
 

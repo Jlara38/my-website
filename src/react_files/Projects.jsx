@@ -7,12 +7,33 @@ export default function Projects(){
     const projects = [
         {
             id: 1,
+            plink: 'https://github.com/Jlara38/my-website/tree/main',
             pname: 'Portfolio Website', 
             pdesc: 'Add Desc here', 
-            pskills: ['React', 'Vite', 'UI/UX'], 
+            pskills: ['React', 'Vite', 'UI/UX', 'Git'], 
             pimage: Zena,
             pimagealt: 'zena'
-        }
+        },
+
+        {
+            id: 2,
+            plink: 'https://github.com/Jlara38/my-website/tree/main',
+            pname: 'Portfolio Website', 
+            pdesc: 'Add Desc here', 
+            pskills: ['React', 'Vite', 'UI/UX', 'Git'], 
+            pimage: Zena,
+            pimagealt: 'zena'
+        },
+
+        {
+            id: 3,
+            plink: 'https://github.com/Jlara38/my-website/tree/main',
+            pname: 'Portfolio Website', 
+            pdesc: 'Add Desc here', 
+            pskills: ['React', 'Vite', 'UI/UX', 'Git'], 
+            pimage: Zena,
+            pimagealt: 'zena'
+        },
     ];
 
     return(
@@ -23,6 +44,7 @@ export default function Projects(){
                 {projects.map(project => (
                     <PCard
                         key={project.id}
+                        link={project.plink}
                         name={project.pname}
                         description={project.pdesc}
                         skills={project.pskills}

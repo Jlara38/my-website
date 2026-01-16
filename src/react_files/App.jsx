@@ -9,7 +9,7 @@ export default function App() {
             <AboutMe></AboutMe>
             <Experience></Experience>
             <Projects></Projects>
-            {/* <Education></Education> */}
+            <Education></Education>
         </>
     );
 }
