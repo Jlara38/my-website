@@ -20,11 +20,11 @@ export default function AboutMe(){
                 </p>
 
                 <div className='icons'>
-                    <a href='https://github.com/Jlara38'>
+                    <a href='https://github.com/Jlara38' target='_blank'>
                         <img src={gitHub} alt='GitHub'></img>
                     </a>
 
-                    <a href='https://www.linkedin.com/in/jtlara28/' alt="LinkedIn">
+                    <a href='https://www.linkedin.com/in/jtlara28/'  target='_blank' alt="LinkedIn">
                         <img src={linkedIn} alt='LinkedIn'></img>
                     </a>
 

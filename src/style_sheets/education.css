@@ -1,22 +1,39 @@
-/* education-section is solely focused on how the entire education section will look. From how its 
-aligned to how it works on screens and how much space the entire section will take. */
-
 .education-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto 1fr;
     align-items: center;
-    width: 100vw;
+    /* border: 2px solid red; */
 }
 
-.education-grid{
+.education-container{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 2rem;
+    /* border: 2px solid red; */
 }
 
-/* The education-item will be more specific in order to manipulate how the item is presented on the screen. */
-.education-item{
-    border: 1px solid black;
+.university-info{
+    width: 100%;
+    justify-self: center;
+    /* border: 2px solid red; */
+}
+
+.university-info h2, h3{
+    text-align: center;
+}
+
+.coursework-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2rem;
+    justify-content: center;
+    /* border: 2px solid red; */
+
 }

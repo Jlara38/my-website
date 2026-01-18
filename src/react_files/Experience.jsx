@@ -1,31 +1,6 @@
-import Card from '../components/Card.jsx'
 import Header from '../components/SectionHeader.jsx'
 
 export default function Experience() {
-    // const jobs = [
-    //     {
-    //         "company": "Target", 
-    //         "position": "Guest Advocate", 
-    //         "start-date": "07/2024", 
-    //         "end-date": "Present",
-    //         "s1": "Cash Handling",
-    //         "s2": "Communication",
-    //         "s3": "Inventory Management",
-    //         "s4": "Adaptability",
-    //         "s5": "Multitasking"
-    //     },
-
-    //     {
-    //         "company": "Rouge Productions LLC", 
-    //         "position": "Software Engineer", 
-    //         "start-date": "02/2025", 
-    //         "end-date": "08/2025",
-    //         "s1": "Flutter/Dart",
-    //         "s2": "Comsos DB",
-    //         "s3": "Azure Functions",
-    //     }
-    // ]
-
     return(
         <div className='general-experience'>
             <Header title={"Experience"}></Header>
