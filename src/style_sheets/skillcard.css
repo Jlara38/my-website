@@ -1,0 +1,9 @@
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin: 16px 0px;
+    padding: 8px 0px;
+}

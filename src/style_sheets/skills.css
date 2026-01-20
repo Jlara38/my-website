@@ -1,0 +1,38 @@
+.general-skills{
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.skills-container{
+    box-sizing: border-box;
+    padding: 2rem;
+    gap: 2rem;
+    /* border: 2px solid red; */
+}
+
+.skills-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 2rem;
+    /* border: 2px solid red */
+}
+
+.skill-section-title{
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
