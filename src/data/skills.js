@@ -4,6 +4,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaFlutter } from "react-icons/fa6";
 import { SiCplusplus } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
+import { FaDartLang } from "react-icons/fa6";
 
 export const SkillsData = [
         {
@@ -12,10 +13,6 @@ export const SkillsData = [
                 {
                     name:"React",
                     icon: FaReact
-                },
-                {
-                    name:"HTML",
-                    icon: FaHtml5
                 },
                 {
                     name:"CSS",
@@ -29,7 +26,7 @@ export const SkillsData = [
         },
 
         {
-            type: "Backend",
+            type: "Languages",
             list:[
                 {
                     name:"C++",
@@ -38,6 +35,14 @@ export const SkillsData = [
                 {
                     name:"Python",
                     icon: FaPython
+                },
+                {
+                    name:"HTML",
+                    icon: FaHtml5
+                },
+                {
+                    name:"Dart",
+                    icon: FaDartLang
                 }
             ]
         }
