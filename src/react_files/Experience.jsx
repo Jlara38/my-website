@@ -2,7 +2,7 @@ import Header from '../components/SectionHeader.jsx'
 
 export default function Experience() {
     return(
-        <div className='general-experience'>
+        <div className='general-experience' id='experience'>
             <Header title={"Experience"}></Header>
 
             <div className='experience-container'>

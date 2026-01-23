@@ -6,7 +6,7 @@ import SkillCard from '../components/SkillCard.jsx'
 
 export default function Skills(){
     return(
-        <div className="general-skills">
+        <div className="general-skills" id='skills'>
             <SectionHeader title={"Skills"}></SectionHeader>
 
             <div className='skills-container'>

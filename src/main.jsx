@@ -9,6 +9,7 @@ import './style_sheets/education.css'
 import './style_sheets/experience.css'
 import './style_sheets/projects.css'
 import './style_sheets/skills.css'
+import './style_sheets/navbar.css'
 
 // All component style sheet imports will be here
 import './style_sheets/card.css'

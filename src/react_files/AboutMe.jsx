@@ -5,7 +5,7 @@ import email from '../assets/icons/mail-fill.svg'
 
 export default function AboutMe(){
     return (
-        <div className="general-info">
+        <div className="general-info" id='aboutMe'>
 
             <div className="name-titles">
                 <h1>Jose Lara</h1>

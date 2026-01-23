@@ -4,7 +4,7 @@ import { projects } from '../data/projects.js';
 
 export default function Projects(){
     return(
-        <div className='general-projects'>
+        <div className='general-projects' id='projects'>
             <Header title={'Projects'}></Header>
 
             <div className='projects-container'>
