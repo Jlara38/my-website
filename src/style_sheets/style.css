@@ -27,6 +27,23 @@ body {
   width: 100%;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  /* border: 2px solid red; */
+}
+
+.section {
+  padding: 4rem 0rem ;
+}
+
+.about {background-color: #CBD585;}
+.experience {background-color: #D8D174;}
+.projects { background-color: #CBD585; }
+.skills { background-color: #D8D174; }
+.education { background-color: #CBD585; }
+
 /* h1 {
   font-size: 2.0em;
 } */

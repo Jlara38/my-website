@@ -9,20 +9,20 @@ import NavBar from "./Navbar.jsx";
 export default function App() {
     return (
         <>
-            <header>
+            <header className="mhead">
                 <NavBar></NavBar>
             </header>
 
             <main className="content">
-                <AboutMe></AboutMe>
+                <section className="section about"><AboutMe></AboutMe></section>
+                
+                <section className="section experience"><Experience></Experience></section>
 
-                <Experience></Experience>
+                <section className="section projects"><Projects></Projects></section>
 
-                <Projects></Projects>
+                <section className="section skills"><Skills></Skills></section>
 
-                <Skills></Skills>
-
-                <Education></Education>
+                <section className="section education"><Education></Education></section>
             </main>
         </>
     );

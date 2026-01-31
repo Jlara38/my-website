@@ -4,6 +4,7 @@
     box-sizing: border-box;
     display: grid;
     align-items: center;
+    background-color: #CBD585;
 }
 
 .projects-container{

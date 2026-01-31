@@ -4,6 +4,7 @@
     box-sizing: border-box;
     display: grid;
     align-items: center;
+    background-color: #D8D174;
     /* border: 2px solid red; */
 }
 

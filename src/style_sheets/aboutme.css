@@ -7,6 +7,8 @@ Specifies the amount of space it will take, padding, and the format that it will
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-color: #CBD585;
+    /* margin-top: 2.5rem; */
     /* border: 2px solid red; */
 }
 

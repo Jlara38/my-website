@@ -5,6 +5,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
+    background-color: #CBD585;
     /* border: 2px solid red; */
 }
 
@@ -35,5 +36,4 @@
     padding: 2rem;
     justify-content: center;
     /* border: 2px solid red; */
-
 }
